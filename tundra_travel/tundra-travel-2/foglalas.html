@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tundra-travel.css">
+    <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <script src="https://kit.fontawesome.com/83d5683545.js" crossorigin="anonymous"></script>
+    <title>Foglalás</title>
+    <style>
+        table {
+            margin-left: 10vw;
+            width: 80vw;
+            justify-content: center;
+            border-collapse: collapse;
+            background-color: hsl(0 0% 100% / 0.3);
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 2px solid #DDD;
+            color: #212121;
+        }
+        th {
+            text-transform: uppercase;
+            text-decoration-style: solid;
+            background-color: hsl(0 0% 100% / 0.8);
+        }
+        td a {
+            justify-content: center;
+            font-size: calc((2vh + 1.4vw) / 2);
+        }
+
+        th.image {
+            width: 17vh;
+        }
+        th.price {
+            width: 10vw;
+        }
+        th.review {
+            width: 10vw;
+        }
+
+        tr.effect-on-hover:hover {
+            background-color: hsl(0 0% 100% / 0.35);
+            height: calc(initial + 10vh);
+            cursor: pointer;
+        }
+        tr.effect-on-hover td:hover {
+            background-color: hsl(0 0% 100% / 0.4);
+        }
+
+        td > a:first-child {
+            text-decoration: none;
+            font-weight: 900;
+            text-decoration-style: solid;
+            color: rgb(58, 104, 14);
+            z-index: 0;
+        }
+
+        .travel-image {
+            height: 17vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../media/foglalas_background2.jpg" alt="background image" class="background cut-top faded">
+        <header class="primary-header flex">
+            
+            <div>
+                <a href="tundra-travel.html">
+                    <img src="../media/tundralogo.png" alt="tundra-travel-logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="navigation-bar" class="primary-navigation text-white flex">
+                    <li>
+                        <a href="tundra-travel.html">Kezdőoldal</a>
+                    </li>
+                    <li>
+                        <a href="foglalas.html">Foglalás</a>
+                    </li>
+                    <li>
+                        <a href="opportunities.html">Karrier</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">Rólunk</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <div>
+        <table class="text-white">
+            <tr>
+                <th class="image"></th>
+                <th>Úticél</th>
+                <th>Időpont</th>
+                <th class="price">Ár</th>
+                <th class="review">Értékelés</th>
+            </tr>
+            <tr class="effect-on-hover">
+                <td><a href="destinations/sample.html" class="row-link">
+                    <img src="../media/dest/adria.jpg" alt="adria-img" class="travel-image">
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Adria, Postojna és a Plitvicei-tavak <i class="fas fa-bus"></i></p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Október 06.<br>November 22.</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>129.999Ft-tól<br>129.999Ft-tól</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>255 értékelésből</p>
+                </a></td>
+            </tr>
+            <tr class="effect-on-hover">
+                <td><a href="destinations/sample.html" class="row-link">
+                    <img src="../media/dest/alps.jpg" alt="adria-img" class="travel-image">
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Alpok kincsei <i class="fas fa-bus"></i></p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Október 08.<br>November 12.</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>145.000Ft-tól<br>145.000Ft-tól</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <br>652 értékelésből</p>
+                </a></td>
+            </tr>
+            <tr class="effect-on-hover">
+                <td><a href="destinations/sample.html" class="row-link">
+                    <img src="../media/dest/austria.jpg" alt="adria-img" class="travel-image">
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Túrázás Ausztria zöld szívében <i class="fas fa-bus"></i></p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Augusztus 07.<br>Június 09.</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>136.500Ft-tól<br>142.000Ft-tól</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>419 értékelésből</p>
+                </a></td>
+            </tr>
+            <tr class="effect-on-hover">
+                <td><a href="destinations/sample.html" class="row-link">
+                    <img src="../media/dest/swiss.jpg" alt="adria-img" class="travel-image">
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Vonaton, vízen, levegőben Svájcban<i class="fas fa-bus"></i></p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>Szeptember 29.<br>Augusztus 19.</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p>226.000Ft-tól<br>234.000Ft-tól</p>
+                </a></td>
+                <td><a href="#" tabindex="-1" class="row-link">
+                    <p><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <br>991 értékelésből</p>
+                </a></td>
+            </tr>
+
+        </table>
+    
+</body>
+</html>
