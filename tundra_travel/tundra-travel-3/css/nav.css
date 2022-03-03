@@ -1,0 +1,111 @@
+body {
+    overflow-x:  hidden;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.logo {
+    margin: 10px;
+    height: 50px;
+}
+
+.primary-header {
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.primary-header > nav {
+    position: absolute;
+    top: 5px;
+    z-index: 900;
+    right: 0px;
+}
+
+.primary-header > div.logo-container {
+    position: absolute;
+    top: 0px;
+    z-index: 901;
+}
+
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    background: hsl(0 0% 0% / 0.5);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(0 0% 100% / 0.3);
+        backdrop-filter: blur(2rem);
+    }
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+nav li {
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width: 50em) {
+    .primary-navigation {
+        --gap: 2em;
+        z-index: 1000;
+
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+
+    .primary-navigation[data-visible='true'] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+        background-image: url('../media/hamburger.png');
+        background-repeat: no-repeat;
+        height: 50px;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        border: 0;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url('../media/close.png');
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 50em) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 20px;
+        padding-inline: clamp(3rem, 7vw, 10rem)
+    } 
+}
+
+
+ /*Source: https://www.youtube.com/watch?v=HbBMp6yUXO0&t=565s*/
