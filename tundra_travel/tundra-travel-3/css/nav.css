@@ -84,7 +84,7 @@ nav li {
         position: absolute;
         z-index: 9999;
         background: transparent;
-        background-image: url('../media/hamburger.png');
+        background-image: url('../images/hamburger.png');
         background-repeat: no-repeat;
         height: 50px;
         aspect-ratio: 1;
@@ -94,7 +94,7 @@ nav li {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('../media/close.png');
+        background-image: url('../images/close.png');
         background-repeat: no-repeat;
     }
 }
