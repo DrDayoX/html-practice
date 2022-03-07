@@ -192,7 +192,7 @@ header {
 
 
 #main {
-	max-width: 900px;
+	max-width: 90vw;
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-left: auto;
@@ -208,6 +208,31 @@ header {
 	color: rgb(22, 22, 22);
 } */
 
+
+/********************/
+/*** LINE STYLES  ***/ 
+/********************/
+
+.line {
+	height: 4px;
+	width: 90vw;
+	background-color: rgb(11, 49, 0);
+	margin: 5px 5vw 5px;
+	border-radius: 2px;
+
+}
+
+.line.thick {
+	height: 9px;
+	border-radius: 3px;
+}
+
+.line.full-width {
+	width: 100vw;
+	border-radius: 0;
+	margin: 5px 0 5px;
+}
+
 /********************/
 /***** BANNERS  *****/ 
 /********************/
@@ -219,21 +244,125 @@ header {
 	color: darkgreen;
 }
 
+h1.banner.title {
+	color: white;
+	font-weight: bold;
+	height: fit-content;
+	font-size:  calc((4vh + 4vw)/2);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; */
+}
+
 p {
 	text-align: justify;
 }
 
+/********************/
+/******* BOX  *******/
+/********************/
+@media (min-width:1251px) {
+	.row{
+		display: flex;
+		justify-content: space-between;
+	}
+	.box {
+		margin: calc(3vh - 4px) 0.5vw calc(3vh - 4px);
+		z-index: 10;
+		max-width: 40vw;
+		width: 40vw;
+		flex-basis: 60%; 
+		background-color: #7fb17e;
+		background-repeat: no-repeat;
+		box-sizing: border-box;
+		transition: 0.5s;
+		background-size: cover;
+		border-radius: 20px;
+	}
+	.box img.logo {
+		width: 20vw;
+		height:	auto;
+		margin: 0;
+	}
 
+}
+
+@media (max-width: 1250px) {
+	.row{
+		display: grid;
+	}
+
+	.box {
+		margin: calc(3vh - 4px) 4vw calc(3vh - 4px);
+		max-width: 92vw;
+		width: 92vw;
+		height: 30vh;
+		flex-basis: 60%; 
+		background-color: #7fb17e;
+		background-repeat: no-repeat;
+		box-sizing: border-box;
+		transition: 0.5s;
+		background-size: cover;
+		border-radius: 20px;
+	}
+
+	.box img.logo {
+		z-index: 100;
+
+		width: 30vw;
+		height:	auto;
+		margin: 0;
+	}
+}
+
+.box.alps {
+	background-image: url("../images/sites/alps.jpg");
+	background-position: 0;
+}
+.box.everest {
+	background-image: url("../images/sites/everest.jpg");
+	background-position: 0 0px;
+}
+.box.jotunheimen {
+	background-image: url("../images/sites/jotunheimen.jpg");
+	background-position: 0;
+}
+
+.box>div:hover {
+	backdrop-filter: blur(2rem);
+	border-radius: 20px;
+	transition-duration: 0.1s;
+}
+
+.box a{
+	width: 20vw;
+}
+
+.box p {
+  color: #D3D3D3;
+}
+.box h3 {
+    text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: whitesmoke;
+}
+/* .box:hover{
+    box-shadow: 0 0 30px 0px #9fd39e;
+} */
 
 /********************/
 /** FOOTER SECTION **/
 /********************/
 
 footer {
-	margin: 10px 2vw 5px 2vw;
+	margin: 10px 1vw 5px 1vw;
 	justify-content: space-between;
 	display: flex;
 	position: relative;
+	height: fit-content;
 }
 
 footer .line {
@@ -245,23 +374,15 @@ footer * {
 }
 
 footer .links {
-	border: yellow solid 1px;
-	height: 30px;
-	transform: translateY(100%);
-}
-/* TODO FOOTER*/
-
-footer .text-small, footer .text-large {
-	display: none;
+	height: fit-content;
 }
 
-footer .affiliates {
-	position: relative;
-}
-
-footer .affiliates>.affiliates-links img {
-	width: 10vw;
-	margin: 0px 0 4px;
+footer>.text-cpright {
+	font-size: small;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 400;
+	/* position: absolute; */
+	padding-top: 10px;
 }
 
 
@@ -275,22 +396,9 @@ footer .affiliates>.affiliates-links img {
 		justify-content: center;
 	}
 
-	footer .text-small {
-		display: block;
+	footer>.text-cpright {
+		display: none;
 	}
-
-	footer .affiliates>.affiliates-links {
-		display: block;
-	}
-
-	footer .affiliates>.affiliates-links img {
-		width: 90vw;
-		margin: 0px 0 4px;
-	}
-
-	/* footer .line {
-		display: block;
-	} */
 }
 
 @media (min-width: 601px) {
@@ -303,13 +411,6 @@ footer .affiliates>.affiliates-links img {
 		margin: 0 4px;
 		cursor: pointer;
 	}
-
-
-
-	footer .affiliates>.affiliates-links {
-
-	}
-
 
 
 /********************/
