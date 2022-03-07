@@ -6,6 +6,10 @@ a, a:link, a:visited { color: inherit; text-decoration: inherit; }
 /****** GLOBAL ******/
 /********************/
 
+* {
+	scroll-behavior: smooth;
+}
+
 .section.internallinks, .section.internallinks * {
 	vertical-align: baseline;
 }
@@ -135,9 +139,6 @@ header {
 	#keyart-3 {
 	background-image: url('../images/parallax/layer3.png');
 	}
-	#keyart-text {
-	background-image: url('../images/parallax/layer-text.png');
-	}
 
 	@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
 	#keyart-0 {
@@ -158,6 +159,11 @@ header {
 	}
 }
 
+	@media (min-device-height: 900px) {
+		#keyart-text {
+			background-image: url('../images/parallax/layer-text.png');
+			}
+	}
 
 /********************/
 /** MAIN STRUCTURE **/
@@ -196,6 +202,12 @@ header {
 	background-color: #9fd39e;
 }
 
+/* .line {
+	height: 2px;
+	width: 80vw;
+	color: rgb(22, 22, 22);
+} */
+
 /********************/
 /***** BANNERS  *****/ 
 /********************/
@@ -217,7 +229,86 @@ p {
 /** FOOTER SECTION **/
 /********************/
 
-/* TODO */
+footer {
+	margin: 10px 2vw 5px 2vw;
+	justify-content: space-between;
+	display: flex;
+	position: relative;
+}
+
+footer .line {
+	display: none;
+}
+
+footer * {
+	vertical-align: middle;
+}
+
+footer .links {
+	border: yellow solid 1px;
+	height: 30px;
+	transform: translateY(100%);
+}
+/* TODO FOOTER*/
+
+footer .text-small, footer .text-large {
+	display: none;
+}
+
+footer .affiliates {
+	position: relative;
+}
+
+footer .affiliates>.affiliates-links img {
+	width: 10vw;
+	margin: 0px 0 4px;
+}
+
+
+@media (max-width: 600px) {
+	footer {
+		display: block;
+	}
+
+	footer * {
+		text-align: center;
+		justify-content: center;
+	}
+
+	footer .text-small {
+		display: block;
+	}
+
+	footer .affiliates>.affiliates-links {
+		display: block;
+	}
+
+	footer .affiliates>.affiliates-links img {
+		width: 90vw;
+		margin: 0px 0 4px;
+	}
+
+	/* footer .line {
+		display: block;
+	} */
+}
+
+@media (min-width: 601px) {
+	footer .text-large {
+		display: block;
+	}
+}
+
+	footer .icons, footer .fa {
+		margin: 0 4px;
+		cursor: pointer;
+	}
+
+
+
+	footer .affiliates>.affiliates-links {
+
+	}
 
 
 
