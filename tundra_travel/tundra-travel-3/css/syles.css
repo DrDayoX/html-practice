@@ -217,14 +217,14 @@ hr {
 
 
 #main {
-	max-width: 90vw;
-	padding-left: 30px;
-	padding-right: 30px;
+	max-width: 96vw;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 99;
 	position: relative;
-	background-color: #e8ffe4;
+	/* background-color: #e8ffe4; */
 }
 
 /* .line {
@@ -726,7 +726,7 @@ p {
 	#main {
 		padding-left: 10px;
 		padding-right: 10px;
-		padding-top: 70px;
+		padding-top: 10px;
 	}
 
 	.section.copyright p {
