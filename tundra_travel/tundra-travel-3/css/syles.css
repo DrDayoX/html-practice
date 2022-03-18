@@ -109,7 +109,7 @@ hr {
     width: 50px;
     height: 4px;
     padding: 0;
-    margin: 29px auto 34px;
+    margin: 10px auto 15px;
     background: #393a3c;
     border: none;
 }
@@ -190,43 +190,6 @@ hr {
 			}
 	}
 
-/********************/
-/** MAIN STRUCTURE **/
-/********************/
-
-
-@media only screen and (max-width: 480px) {
-	.toprule {
-		display: none;
-	}
-
-	.pax #maincontain {
-		top: 0px !important;
-	}
-}
-
-#maincontain {
-	background-color: #f9fff8;
-	position: relative;
-	z-index: 98;
-}
-
-	.pax #maincontain {
-		top: 140px;
-	}
-
-
-#main {
-	max-width: 96vw;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 99;
-	position: relative;
-	/* background-color: #e8ffe4; */
-}
-
 /* .line {
 	height: 2px;
 	width: 80vw;
@@ -256,6 +219,30 @@ hr {
 	width: 100vw;
 	border-radius: 0;
 	margin: 5px 0 5px;
+}
+
+/********************/
+/*** ROUND BUTTON ***/ 
+/********************/
+
+a.round-button {
+	background-color: #40600c;
+	padding: 50px;
+	border-radius: 100%;
+	transition-duration: 0.2s;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+a.round-button:hover {
+	transition-duration: 0.2s;
+	background-color: #539b52;
+	cursor: pointer;
+}
+
+a.round-button i {
+    color: rgb(240, 240, 240);
+    font-size: 50px;
 }
 
 /********************/

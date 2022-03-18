@@ -1,0 +1,71 @@
+/********************/
+/** MAIN STRUCTURE **/
+/********************/
+
+@media only screen and (max-width: 480px) {
+	.toprule {
+		display: none;
+	}
+
+	.pax #maincontain {
+		top: 0px !important;
+	}
+}
+
+#maincontain {
+	background-color: rgb(240, 240, 240);
+	position: relative;
+	z-index: 98;
+}
+
+	.pax #maincontain {
+		top: 140px;
+	}
+
+
+#main {
+	max-width: 96vw;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 99;
+	position: relative;
+    background-color: inherit;
+}
+
+/* SERVICES */
+#main>div.services {
+    align-items:center;
+    /* background-color: white; */
+}
+
+div.services .overprices {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+div.services .overprices>div {
+    display: block;
+    margin: 5px;
+    margin-top: 13px;
+    padding-top: 50px;
+}
+
+div.services .overprices>div>div {
+    margin-top: 60px;
+}
+
+div.services h3 {
+    color: #424346;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+div.services p{
+    color: rgb(68, 68, 68);
+    text-align: center;
+}

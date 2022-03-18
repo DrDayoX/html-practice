@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8" />
@@ -20,9 +20,11 @@
     <link rel="stylesheet" href="css/nav.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css/card.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/syles.css" type="text/css" charset="utf-8" />
     
+    <script src="https://kit.fontawesome.com/a6fb892e77.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
             </button>
 
             <div class="logo-container">
-                <a href=""><img src="images/tundralogo.png" alt="logo" class="logo"></a>
+                <a href=""><img src="images/logos/tundralogo.png" alt="logo" class="logo"></a>
             </div>
 
             <nav>
@@ -74,10 +76,7 @@
 
     <div id="maincontain">
 
-        <!-- <div class="line full-width thick"></div> -->
         <h1 class="banner title">Válassza ki az Önhöz megfelelő utazást!</h1>
-        <!-- <div class="line thick"></div> -->
-
         <hr class="divider">
         
         <!----   WEBSITE BODY   ---->
@@ -85,45 +84,122 @@
 
             <div class="card-container">
                 <div class="card-subcontainer">
-                    <div class="card" style="background-image: url(images/sites/everest.jpg);">
+                    <div class="card" style="background-image: url(images/sites/everest-feature.jpg);">
                         <div class="card-content">
-                            <img src="images/sites/tundra-everest.png" alt="" class="card-title">
+                            <img src="images/logos/tundra-everest.png" alt="" class="card-title">
                             <h2 class="card-title">Mount Everest</h2>
                             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
                             <a href="#" class="button">Learn More</a>
                         </div>
                     </div>
-                    <div class="card" style="background-image: url(images/sites/alps.jpg);">
+                    <div class="card" style="background-image: url(images/sites/alps-feature.jpg);">
                         <div class="card-content">
-                            <img src="images/sites/tundra-alps.png" alt="" class="card-title">
+                            <img src="images/logos/tundra-alps.png" alt="" class="card-title">
                             <h2 class="card-title">Swiss Alps</h2>
                             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
                             <a href="#" class="button">Learn More</a>
                         </div>
                     </div>
-                    <div class="card" style="background-image: url(images/sites/jotunheimen.jpg);">
+                    <div class="card" style="background-image: url(images/sites/jotunheimen-feature.jpg);">
                         <div class="card-content">
-                            <img src="images/sites/tundra-jotunheimen.png" alt="" class="card-title">
+                            <img src="images/logos/tundra-jotunheimen.png" alt="" class="card-title">
                             <h2 class="card-title">Jotunheimen</h2>
                             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
                             <a href="#" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
-                
-
+                <div class="card-subcontainer">
+                    <div class="card" style="background-image: url(images/sites/alaska-feature.jpg);">
+                        <div class="card-content">
+                            <img src="images/logos/tundra-alaska.png" alt="" class="card-title">
+                            <h2 class="card-title">Alaska</h2>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
+                            <a href="#" class="button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(images/sites/faroe-feature.jpg);">
+                        <div class="card-content">
+                            <img src="images/logos/tundra-faroe.png" alt="" class="card-title">
+                            <h2 class="card-title">Swiss Alps</h2>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
+                            <a href="#" class="button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(images/sites/preikestolen-feature.jpg);">
+                        <div class="card-content">
+                            <img src="images/logos/tundra-preikestolen.png" alt="" class="card-title">
+                            <h2 class="card-title">Preikestolen</h2>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veritatis tempore hic quisquam gun nam reiciendis dolorum eius quis tenetur.</p>
+                            <a href="#" class="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
- 
+            <div class="services">
+                <h1 class="banner title">55 éve a Tundrai utazások első számú irodája</h1>
+                <hr class="divider">
+                <p>Kattintson és ismerje meg az azokat a szolgáltatásokat, amelyeket nem nyújtunk Önnek</p>
+                <!-- <div>
+                    <div class="overprices">
+                        <div>
+                            <a href="" class="round-button">
+                                <i class="fa-solid fa-bus-simple"></i>
+                            </a>
+                            <div>
+                                <h3>799€ Vidéki transzfer</h3>
+                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                            </div>
+                        </div>
 
 
+                        <div>
+                            <div>
+                                <a href=""><h3>799€ Vidéki transzfer</h3></a>
+                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                            </div> 
+                        </div>
 
+
+                        <div>
+                            <a href="" class="round-button">
+                                <i class="fa-solid fa-plane"></i>
+                            </a>
+                            <div>
+                                <h3>799€ Vidéki transzfer</h3>
+                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <a href="" class="round-button">
+                                <i class="fa-solid fa-bus-simple"></i>
+                            </a>
+                            <div>
+                                <h3>799€ Vidéki transzfer</h3>
+                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-list">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div> -->
+            </div>
 
 
 
 
             <hr>
-            
+            <!-- Placeholder text -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem, facilis libero, necessitatibus sunt maxime assumenda rerum quia magnam ipsam odit est et tempora animi at inventore voluptate in laboriosam.</p>
             <p>Ut maxime, sequi nemo libero quaerat velit. Officia adipisci omnis sed eveniet rerum ad, eius dolores id doloribus inventore quos quas porro. Ut beatae ex est exercitationem tempora quidem iure?</p>
             <p>Excepturi deleniti quidem harum fuga officia nulla repudiandae magni magnam ea, sed itaque eligendi dolor dolore, voluptatem odit rerum? Nobis obcaecati dolores ipsum mollitia! Exercitationem repellat minima ex voluptatibus temporibus.</p>
@@ -150,7 +226,7 @@
                     <div class="">
                         <div class="footer-logo">
                             <a href="https://tundratravel.tk/">
-                                <img src="images/tundralogo.png" alt="tundra-logo">
+                                <img src="images/logos/tundralogo.png" alt="tundra-logo">
                             </a>
                         </div>    
                         <div class="awards-container">
