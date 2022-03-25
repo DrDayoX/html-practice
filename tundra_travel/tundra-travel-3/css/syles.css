@@ -224,25 +224,75 @@ hr {
 /********************/
 /*** ROUND BUTTON ***/ 
 /********************/
-
-a.round-button {
+.round-button-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.round-button {
+	align-items: center;
+	max-width: 120px;
+	max-height: 120px;
+	transition-duration: 0.2s;
 	background-color: #40600c;
-	padding: 50px;
 	border-radius: 100%;
-	transition-duration: 0.2s;
-	max-width: 100px;
-	max-height: 100px;
 }
 
-a.round-button:hover {
-	transition-duration: 0.2s;
-	background-color: #539b52;
-	cursor: pointer;
+	.round-button:hover {
+		transition-duration: 0.2s;
+		background-color: #527914;
+		cursor: pointer;
+		transform: scale(1.05);
+	}
+
+	.round-button::after {
+		content: "";
+		display: block;
+		border: gray 2px solid;
+		width: 130px;
+		height: 130px;
+		position: absolute;
+		top: -7px;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 100%;
+		transition-duration: 0.2s;
+	}
+
+	@media (hover) {
+		.round-button::after {
+			width: 140px;
+			height: 140px;
+			top: -12px;
+		}
+		
+		.round-button:hover::after {
+			border: #527914 2px solid;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) scale(0.92);
+			transition-duration: 0.2s;		
+		}
+	}
+
+
+
+.round-button i {
+	position:absolute;
+	right: 0;
+	color: #f9fff8;
+	top: 50%;
+	transform: translateY(-50%) ;
+	left: 0;
+	width: 120px;
+	font-size: 40px;
 }
 
-a.round-button i {
-    color: rgb(240, 240, 240);
-    font-size: 50px;
+.round-button>div {
+	position: relative;
+	width: 120px;
+	height: 120px;
 }
 
 /********************/

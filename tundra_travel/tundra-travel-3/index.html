@@ -21,14 +21,19 @@
     <link rel="stylesheet" href="css/footer.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css/card.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/gototop.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/syles.css" type="text/css" charset="utf-8" />
     
     <script src="https://kit.fontawesome.com/a6fb892e77.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
     <div>
+        <button onclick="topFunction()" id="gototop" title="Go to top">Top</button>
+
         <header class="primary-header flex">
             <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle">
                 <!-- <span class="sr-only">Menu</span> -->
@@ -69,9 +74,7 @@
         <div class="keyart_layer parallax" id="keyart-logo" data-speed="45"></div>
         <div class="keyart_layer parallax" id="keyart-2" data-speed="60"></div>
         <div class="keyart_layer parallax" id="keyart-3" data-speed="90"></div>
-        <!-- <div class="keyart_layer parallax" id="keyart-3" data-speed="100"></div> -->
         <div class="keyart_layer parallax" id="keyart-text" data-speed="100"></div>
-
     </div>
 
     <div id="maincontain">
@@ -140,46 +143,51 @@
             <div class="services">
                 <h1 class="banner title">55 éve a Tundrai utazások első számú irodája</h1>
                 <hr class="divider">
-                <p>Kattintson és ismerje meg az azokat a szolgáltatásokat, amelyeket nem nyújtunk Önnek</p>
-                <!-- <div>
+                <p>Kattintson és ismerje meg az azokat a szolgáltatásokat, amelyeket nyújtunk Önnek</p>
+                <div>
                     <div class="overprices">
                         <div>
-                            <a href="" class="round-button">
-                                <i class="fa-solid fa-bus-simple"></i>
-                            </a>
+                            <div class="round-button-container">
+                                <a href="#" class="round-button" >
+                                    <div><i class="fa-solid fa-bus-simple"></i></div>
+                                </a>  
+                            </div>
                             <div>
-                                <h3>799€ Vidéki transzfer</h3>
-                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                                <h3>Borsos vidéki transzfer</h3>
+                                <p>Felszállás a világ összes városában és a holdon, a zsebünk kényelme érdekében</p>
                             </div>
                         </div>
-
-
                         <div>
+                            <div class="round-button-container">
+                                <a href="#" class="round-button" >
+                                    <div><i class="fa-solid fa-plane"></i></div>
+                                </a>  
+                            </div>
                             <div>
-                                <a href=""><h3>799€ Vidéki transzfer</h3></a>
-                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
-                            </div> 
-                        </div>
-
-
-                        <div>
-                            <a href="" class="round-button">
-                                <i class="fa-solid fa-plane"></i>
-                            </a>
-                            <div>
-                                <h3>799€ Vidéki transzfer</h3>
-                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                                <h3>Jutányos repülőút</h3>
+                                <p>Jutányosan drága áron repülhet a túraútjaink bármelyikébe</p>
                             </div>
                         </div>
-
-
                         <div>
-                            <a href="" class="round-button">
-                                <i class="fa-solid fa-bus-simple"></i>
-                            </a>
+                            <div class="round-button-container">
+                                <a href="#" class="round-button" >
+                                    <div><i class="fa-solid fa-percent"></i></div>
+                                </a>  
+                            </div>
                             <div>
-                                <h3>799€ Vidéki transzfer</h3>
-                                <p>Felszállás a világ összes városában, a Világ és a zsebünk kényelme érdekében</p>
+                                <h3>Kedvezményesen drága</h3>
+                                <p>A TundraTravel utazásai olyan drágák, hogy a leggazdagbnak is mélyre kell nyúlnia</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="round-button-container">
+                                <a href="#" class="round-button" >
+                                    <div><i class="fa-solid fa-eye"></i></div>
+                                </a>  
+                            </div>
+                            <div>
+                                <h3>Megfizethetetlen adatvédelem</h3>
+                                <p>Cégünknek olyan fontosak az Ön adatai, hogy azt eladjuk profitért</p>
                             </div>
                         </div>
                     </div>
@@ -192,7 +200,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                </div> -->
+                </div>
             </div>
 
 
@@ -254,9 +262,9 @@
                                 <li><a href="tel:+36123456789" onclick="ga('send', 'event', 'Contact', 'FooterTel', 'https://www.tundratravel.tk/')">Hívás: 12/345-6789</a></li>
                                 <li><a href="mailto:eiskaffe@eiskaffe.com" onclick="ga('send', 'event', 'Contact', 'FooterEmail', 'https://www.tundratravel.tk/')">Üzenet küldése: eiskaffe@eiskaffe.com</a></li>
                                 <li><a target="_blank" href="https://www.google.com/maps/place/46%C2%B016'12.7%22N+18%C2%B022'42.9%22E" onclick="ga('send', 'event', 'Contact', 'FooterAddress', 'https://www.tundratravel.tk/')">Térkép: 7349, Szászvár Kodály Zoltán utca 69.</a></li>
-                                <li><a target="_blank" href="dogunents/2026catalouge.pdf">Aktuális katalógusunk letöltése</a></li>
-                                <li><a target="_blank" href="dogunents/generaltravelcontract.pdf">Általános utazási szerződésünk</a></li>
-                                <li><a target="_blank" href="dogunents/privacypolicy.pdf">Adatvédelmi tájékoztató</a></li>
+                                <li><a target="_blank" href="documents/2026catalouge.pdf">Aktuális katalógusunk letöltése</a></li>
+                                <li><a target="_blank" href="documents/generaltravelcontract.pdf">Általános utazási szerződésünk</a></li>
+                                <li><a target="_blank" href="documents/privacypolicy.pdf">Adatvédelmi tájékoztató</a></li>
                             </ul>
                             <ul class="footer-navigation">
                                 <li><a href="https://www.tundratravel.tk">Kezdőlap</a></li>
@@ -300,9 +308,10 @@
     </div>
 
 
-
+    <!-- DOCUMENT BASED SCRIPTS -->
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/gototop.js"></script>
 </body>
 
 </html>

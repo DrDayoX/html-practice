@@ -43,19 +43,13 @@
 div.services .overprices {
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 170px;
+    margin-right: 170px;
 }
 
 div.services .overprices>div {
-    display: block;
-    margin: 5px;
-    margin-top: 13px;
-    padding-top: 50px;
-}
-
-div.services .overprices>div>div {
-    margin-top: 60px;
+	margin: 20px 10px;
+	width: 400px;
 }
 
 div.services h3 {
