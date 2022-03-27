@@ -1,3 +1,11 @@
+div#header-div {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
+}
+
+
 /********************/
 /** MAIN STRUCTURE **/
 /********************/
@@ -150,6 +158,78 @@ div.services .tundra-team {
 		color: #393a3c;
 	}
 
+/***********************/
+/* FULL SCALE VERSIONS */
+/***********************/
+
+/* AWARDS - FULL SCALE */
+
+body#awards .award-list {
+	justify-content: center;
+	width: 70vw;
+	margin: auto;
+}
+
+body#awards .award-list .award-container {
+	display: flex;
+	justify-content: space-between;
+	/* height: fit-content; */
+}
+
+
+	body#awards .award-list img {
+		height: 200px;
+	}
+
+	body#awards .award-list .text-box {
+		width: 100%;
+		margin: 0 20px;
+		position: relative;
+	}
+
+		body#awards .award-list .text-box>div {
+			position: absolute;
+			top:50%;
+			transform: translateY(-50%);
+		}
+
+		body#awards .award-list .text-box.left,
+		body#awards .award-list .text-box.left * {
+			text-align: left;
+		}
+
+		body#awards .award-list .text-box.right,
+		body#awards .award-list .text-box.right *  {
+			text-align: right;
+		}
+
+	body#awards .award-list p {
+		margin-bottom: 20px;
+		color: #424346;
+	}
+
+	body#awards .award-list h2 {
+		font-size: x-large;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-weight: bolder;
+		text-transform: uppercase;
+		color: #393a3c;
+	}
+
+	body#awards .award-list a:not(.link) {
+		border: #393a3c solid 2px;
+		color: #393a3c;
+		padding: 10px 40px;
+		margin: auto;
+		transition-duration: 0.2s;
+	}
+
+	body#awards .award-list a:not(.link):hover {
+		transition-duration: 0.2s;
+		border: rgb(58, 104, 18) solid 2px;
+		color: rgb(58, 104, 18);
+		transform: scaleX(2);
+	}
 
 /* RESPONSIVENESS */
 
