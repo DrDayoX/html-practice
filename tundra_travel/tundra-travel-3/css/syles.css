@@ -55,32 +55,6 @@ body.subpage {
 	position: relative;
 }
 
-/* h1, h2, h3, h4 {
-	text-transform: uppercase;
-} */
-
-s {
-	opacity: 0.8;
-	position: relative;
-	text-decoration: none;
-}
-s:before {
-	position: absolute;
-	content: "";
-	left: -3px;
-	top: 50%;
-	right: -3px;
-	border-top: 2px solid;
-	box-shadow: 0px 1px 1px #ffaf00;
-	border-color: #973700;
-	-webkit-transform: rotate(-4deg);
-	-moz-transform: rotate(-4deg);
-	-ms-transform: rotate(-4deg);
-	-o-transform: rotate(-4deg);
-	transform: rotate(-4deg);
-}
-
-
 /* MAGNIFIC OVERRIDE */
 
 .firewatch .mfp-image-holder .mfp-content {
@@ -250,33 +224,71 @@ hr {
 		content: "";
 		display: block;
 		border: gray 2px solid;
-		width: 130px;
-		height: 130px;
 		position: absolute;
-		top: -7px;
-		left: 50%;
 		transform: translateX(-50%);
 		border-radius: 100%;
 		transition-duration: 0.2s;
 	}
 
-	@media (hover) {
-		.round-button::after {
-			width: 140px;
-			height: 140px;
-			top: -12px;
-		}
-		
+	@media (hover) {		
 		.round-button:hover::after {
 			border: #527914 2px solid;
 			position: absolute;
 			left: 50%;
-			transform: translateX(-50%) scale(0.92);
 			transition-duration: 0.2s;		
 		}
 	}
 
+	@media (hover) and (min-width: 601px) {
+		.round-button::after {
+			width: 138px;
+			height: 138px;
+			top: -11px;
+			left: 50%;
+		}
 
+		.round-button i {
+			width: 120px;
+			font-size: 40px;
+		}
+
+		.round-button:hover::after {
+			transform: translateX(-50%) scale(0.90);
+		}
+
+		.round-button>div {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.round-button {
+			width: 108px;
+			height: 108px;
+		}
+
+		.round-button i {
+			width: 108px;
+			font-size: 32px;
+		}
+
+		.round-button::after {
+			width: 120px;
+			height: 120px;
+			top: -8px;
+			left: 50%;
+		}
+
+		.round-button:hover::after {
+			transform: translateX(-50%) scale(0.8);
+		}
+
+		.round-button>div {
+			width: 108px;
+			height: 108px;
+		}
+	}
 
 .round-button i {
 	position:absolute;
@@ -285,14 +297,12 @@ hr {
 	top: 50%;
 	transform: translateY(-50%) ;
 	left: 0;
-	width: 120px;
-	font-size: 40px;
 }
 
 .round-button>div {
 	position: relative;
-	width: 120px;
-	height: 120px;
+	max-width: 120px;
+	max-height: 120px;
 }
 
 /********************/

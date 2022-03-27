@@ -24,9 +24,9 @@
 
 
 #main {
-	max-width: 96vw;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* max-width: 96vw; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 99;
@@ -37,20 +37,187 @@
 /* SERVICES */
 #main>div.services {
     align-items:center;
+	background-color: #f7f7f7;
+	/* padding-bottom: 20px; */
     /* background-color: white; */
 }
 
 div.services .overprices {
     display: flex;
     justify-content: space-between;
-    margin-left: 170px;
-    margin-right: 170px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* AWARDS */
+
+div.services .award-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+	div.services .award-list img {
+		width: 180px;
+		/* margin: 00px; */
+	}
+
+/* GARANCIA */
+
+div.services .garancia {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(58, 104, 18);
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+
+	div.services .garancia * {
+		margin: auto 200px;
+		color: whitesmoke;
+		font-size: xx-large;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+	div.services .garancia a {
+		border: whitesmoke solid 3px;
+		padding: 10px 20px;
+		border-radius: 2%;
+		transition-duration: 0.2s;
+	}
+
+	div.services .garancia a:hover {
+		transition-duration: 0.2s;
+		transform: scale(1.02);
+		border: rgb(226, 226, 226) solid 3px;
+		padding: 14px 28px;
+		border-radius: 4%;
+	}
+
+
+/* TUNDRA TEAM */
+
+div.services .tundra-team {
+	display: flex;
+	justify-content: space-between;
+}
+
+	div.services .tundra-team>div {
+		/* width: 50%; */
+		max-height: 80vh;
+	}
+
+	div.services .tundra-team>div.text-part {
+		margin: 100px 10px 100px 10%;
+	}
+
+	div.services .tundra-team>div.text-part p {
+		text-align: justify;
+	}
+
+		div.services .tundra-team .links {
+			margin: 50px 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+			div.services .tundra-team .links a {
+				border: rgb(71, 128, 21) solid 2px;
+				padding: 10px;
+				color: rgb(58, 104, 18);
+				font-weight: bold;
+				border-radius: 2%;
+				margin: 0 100px;
+				transition-duration: 0.2s;
+			}
+			
+			div.services .tundra-team .links a:hover {
+				border: rgb(50, 94, 12) solid 2px;
+				color: rgb(50, 94, 12);
+				transition-duration: 0.2s;
+				transform: scale(1.03);
+			}
+
+	div.services .tundra-team img {
+		max-height: 80vh;
+		/* height: 400px; */
+	}
+
+	div.services .tundra-team h1 {
+		font-size: xx-large;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: #393a3c;
+	}
+
+
+/* RESPONSIVENESS */
+
+@media (min-width: 1351px) {
+	div.services .overprices {
+		margin-left: 170px;
+		margin-right: 170px;
+	}
+
+	div.services .award-list {
+		margin: 30px 300px;
+	}
+}
+
+@media (min-width: 1049px) and (max-width: 1350px) {
+	div.services .overprices {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media (min-width: 851px) and (max-width: 1048px) {
+	div.services .overprices {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 850px) {
+	div.services .overprices {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media (min-width:901px) {
+	div.services .overprices>div {
+		margin: 0;
+		width: 49.5%;
+	}
+}
+
+@media (max-width:900px) {
+	div.services .overprices {
+		display: block;
+		margin: auto;
+	}
 }
 
 div.services .overprices>div {
-	margin: 20px 10px;
-	width: 400px;
+	display: flex;
 }
+
+div.services .overprices>div>div {
+	width: 50%;
+}
+
+@media (max-width: 400px) {
+	div.services .overprices>div {
+		display: block;
+	}
+	div.services .overprices>div>div {
+		width: 100%;
+	}
+}
+
+
+/* GENERAL */
 
 div.services h3 {
     color: #424346;

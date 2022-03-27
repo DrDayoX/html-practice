@@ -13,6 +13,8 @@
 @media (min-width: 1201px) {
     .card {
         margin: 0.7vw;
+        /* width: 33%; */
+        /* height: 300px; */
     }
 }
 
