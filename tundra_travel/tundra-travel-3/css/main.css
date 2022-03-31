@@ -106,31 +106,35 @@ div.services .garancia {
 
 /* TUNDRA TEAM */
 
-div.services .tundra-team {
+.text-image {
 	display: flex;
 	justify-content: space-between;
 }
 
-	div.services .tundra-team>div {
+	.text-image>div {
 		/* width: 50%; */
 		max-height: 80vh;
 	}
 
-	div.services .tundra-team>div.text-part {
-		margin: 100px 10px 100px 10%;
+	.text-image>div.text-part-left {
+		margin: 100px 10px 100px 5%;
 	}
 
-	div.services .tundra-team>div.text-part p {
+	.text-image>div.text-part-right {
+		margin: auto 5% auto 10px;
+	}
+
+	.text-image>div.text-part p {
 		text-align: justify;
 	}
 
-		div.services .tundra-team .links {
+		.text-image .links {
 			margin: 50px 0;
 			display: flex;
 			justify-content: space-between;
 		}
 
-			div.services .tundra-team .links a {
+			.text-image .links a {
 				border: rgb(71, 128, 21) solid 2px;
 				padding: 10px;
 				color: rgb(58, 104, 18);
@@ -140,19 +144,19 @@ div.services .tundra-team {
 				transition-duration: 0.2s;
 			}
 			
-			div.services .tundra-team .links a:hover {
+			.text-image .links a:hover {
 				border: rgb(50, 94, 12) solid 2px;
 				color: rgb(50, 94, 12);
 				transition-duration: 0.2s;
 				transform: scale(1.03);
 			}
 
-	div.services .tundra-team img {
+	 .text-image img {
 		max-height: 80vh;
 		/* height: 400px; */
 	}
 
-	div.services .tundra-team h1 {
+	 .text-image h1 {
 		font-size: xx-large;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		color: #393a3c;
@@ -230,6 +234,20 @@ body#awards .award-list .award-container {
 		color: rgb(58, 104, 18);
 		transform: scaleX(2);
 	}
+
+/* about_us */
+
+section#about_us {
+	display: block;
+}
+
+section#about_us iframe {
+	clear:right;
+	float: right;
+	margin: auto;
+	width: 560px;
+	height: 300px;
+}
 
 /* RESPONSIVENESS */
 

@@ -129,6 +129,7 @@ footer>section.footer-options>div.section-container>div {
 
 footer>section.footer-options .awards-container {
 	width: 100%;
+	margin-top: 8px;
 }
 
 footer>section.footer-options .awards-container>p.awards-text {
