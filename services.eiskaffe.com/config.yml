@@ -1,0 +1,76 @@
+baseURL: 'https://services.eiskaffe.com'
+theme: risotto
+title: services.eiskaffe.com
+author: eiskaffe
+copyright: © 2022 eiskaffe
+paginate: 3
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: true
+ignoreErrors:
+  - error-remote-getjson
+sectionPagesMenu: main
+params:
+  noindex: false
+  theme:
+    palette: gruvbox-dark
+    mode: dark-mode
+  about:
+    title: 'services.eiskaffe.com'
+    description: 'A list of public services offered by eiskaffe, it''s documentation and other.'
+    logo: images/rice.svg
+  socialLinks:
+    - icon: fab fa-github
+      title: GitHub
+      url: 'https://github.com/eiskaffe'
+    - icon: fas fa-envelope
+      title: Email
+      url: 'mailto:professionalcucumber@tutanota.com'
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 10
+    - identifier: minecraft
+      name: minecraft
+      url: /minecraft/
+      weight: 10
+    - identifier: status
+      name: status
+      url: https://status.eiskaffe.com/status/minecraft
+      weight: 10
+      icon: fa fa-external-link
+
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
