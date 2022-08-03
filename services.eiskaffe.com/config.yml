@@ -11,7 +11,7 @@ ignoreErrors:
   - error-remote-getjson
 sectionPagesMenu: main
 params:
-  noindex: false
+  # noindex: false
   theme:
     palette: gruvbox-dark
     mode: dark-mode
