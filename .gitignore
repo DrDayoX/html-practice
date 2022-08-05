@@ -1,3 +1,9 @@
 # npm
 node_modules
 package-lock.json
+
+# hugo
+_site/
+
+# misc
+*.7z
