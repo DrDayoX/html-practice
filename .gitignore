@@ -4,5 +4,6 @@ node_modules
 # hugo
 _site/
 
-# misc
+# compressed files
 *.7z
+*.zip
