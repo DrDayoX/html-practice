@@ -2,5 +2,5 @@
 	path = services.eiskaffe.com/themes/risotto
 	url = https://github.com/joeroe/risotto.git
 [submodule "johnatan-film-studios"]
-	path = johnatan-film-studios
+	path = jfs.illesgergely.com
 	url = git@github.com:eiskaffe/johnatan-film-studios.git
