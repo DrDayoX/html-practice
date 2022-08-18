@@ -4,6 +4,10 @@ node_modules
 # hugo
 _site/
 
+# conf.eiskaffe.com
+conf.eiskaffe.com/**/*.txt
+conf.eiskaffe.com/**/*.*sum
+
 # compressed files
 *.7z
 *.zip
