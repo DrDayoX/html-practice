@@ -4,3 +4,6 @@
 [submodule "johnatan-film-studios"]
 	path = jfs.illesgergely.com
 	url = git@github.com:eiskaffe/johnatan-film-studios.git
+[submodule "docs.eiskaffe.com"]
+	path = docs.eiskaffe.com
+	url = git@github.com:eiskaffe/eiskaffe.github.io.git
