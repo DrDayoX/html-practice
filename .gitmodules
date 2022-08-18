@@ -7,3 +7,6 @@
 [submodule "docs.eiskaffe.com"]
 	path = docs.eiskaffe.com
 	url = git@github.com:eiskaffe/eiskaffe.github.io.git
+[submodule "portfolio.illesgergely.com"]
+	path = portfolio.illesgergely.com
+	url = git@github.com:eiskaffe/portfolio.git
