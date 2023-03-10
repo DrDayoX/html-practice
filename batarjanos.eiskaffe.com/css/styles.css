@@ -1,0 +1,104 @@
+:root {
+    --gray: #313131;
+    --red: #7e0a00;
+    --dark-red: #2e0400;
+}
+
+body {
+    background-color: ghostwhite;
+    font-size: large;
+}
+
+#tartalom {
+    width: 1200px;
+    margin: 5px auto 5px auto;
+    background-color: gainsboro;
+}
+
+header>img {
+    width: 1200px;
+}
+
+/* NAVIGATION */
+
+header > div {
+    padding: 10px;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+header hr {
+    border-top: 1px solid var(--red);
+}
+
+nav a {
+    margin: 10px;
+    font-size: larger;
+}
+
+img#portait {
+    width: 200px;
+    margin-right: 130px;
+    border-radius: 50%;
+    border: var(--red) solid 4px;
+    float: right;
+}
+
+/* TÖRZS */
+section#torzs {
+    padding: 10px;
+}
+
+section > div > h1:first-child {
+    margin-top: 0px;
+}
+
+section>div:first-child {
+    width: 880px;
+}
+
+section>div#jegyzek {
+    width: 300px;
+    margin-left: 10px;
+}
+
+/* VERS */
+
+div.vers {
+    font-style: italic;
+    width: 400px;
+}
+
+div.vers p:last-child {
+    text-align: right;
+}
+
+
+/* GENERAL */
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-red);
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3 {
+    color: var(--dark-red);
+}
+
+p {
+    text-align: justify;
+}
