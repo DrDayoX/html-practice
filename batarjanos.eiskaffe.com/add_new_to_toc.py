@@ -6,13 +6,13 @@ link = input("Enter the link (href): ")
 name = input("Enter the name (text): ")
 category = input("Enter the category: ")
 
-# link = "/vers/indeasdx.html"
-# name = "teszt"
-# category = "versifikator"
+A = [os.path.join(subdir, file)
+     for subdir, dirs, files in os.walk(".")
+     for file in files]
 
 # Loop through all HTML files in the current directory
 # for filename in os.listdir("."):
-for filename in ["index.html"]:
+for filename in A:
     if filename.endswith(".html"):
         # Load the HTML file and parse it with BeautifulSoup
         with open(filename, "r", encoding="utf-8") as f:
@@ -25,7 +25,7 @@ for filename in ["index.html"]:
                 print("This link already exists.")
                 break
 
-        else: # else of for loop
+        else:  # else of for loop
             # Find the table of contents
             toc = soup.find("ul", {"id": "toc"})
             if not toc:
@@ -52,6 +52,7 @@ for filename in ["index.html"]:
             # Add the new element to the list
             new_element_li = soup.new_tag("li")
             new_element_a = soup.new_tag("a", href=link)
+            new_element_a["class"] = "page-link"
             new_element_a.string = name
             new_element_li.append(new_element_a)
             elements_ul.append(new_element_li)

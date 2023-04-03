@@ -21,7 +21,7 @@ header>img {
 
 /* NAVIGATION */
 
-header > div {
+header>div {
     padding: 10px;
 }
 
@@ -53,7 +53,7 @@ section#torzs {
     padding: 10px;
 }
 
-section > div > h1:first-child {
+section>div>h1:first-child {
     margin-top: 0px;
 }
 
@@ -95,7 +95,9 @@ a:hover {
     justify-content: space-between;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--dark-red);
 }
 
